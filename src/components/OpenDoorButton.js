@@ -29,7 +29,7 @@ class OpenDoorButton extends Component {
     const { link } = this.props;
 
     return (
-      <div className="Button" onClick={() => this.openDoorOnClick()}>{link}</div>
+      <button className="Button" onClick={() => this.openDoorOnClick()}>{link}</button>
     );
   }
 }

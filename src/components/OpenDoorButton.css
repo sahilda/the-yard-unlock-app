@@ -3,4 +3,12 @@
   padding: 10px;
   font-size: 14px;
   background-color: aliceblue;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.Button:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
 }
