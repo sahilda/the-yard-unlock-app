@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import OpenDoorButton from './components/OpenDoorButton'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={'https://theyard.com/wp-content/themes/theyard/slice/svg/logo.svg'} className="App-logo" alt="logo" />        
       </header>
+      <div className="App-body">
+        <OpenDoorButton
+          link={'Gowanus Gate'}
+          door={'6211'}
+        />
+        <OpenDoorButton
+          link={'Gowanus Basement'}
+          door={'6096'}
+        />
+        <OpenDoorButton
+          link={'Gowanus Front Door'}
+          door={'6095'}
+        />
+      </div>
+      <div className="Footer">made by sahil agarwal</div>
     </div>
   );
 }
